@@ -2,17 +2,20 @@
 
 ## Install
 ```
-go get xxx
+go get github.com/ymzuiku/gonginx
 ```
 
 ## Start
 
+start server and load ./static/*
+
 ```
 cd project
-gonginx
+gonginx ./static
 ```
 
-## proxy to http://localhost:5000
+start server and load ./static/*, and proxy to http://localhost:5000
+
 ```
-gonginx 5000
+gonginx ./static 5000
 ```
