@@ -26,6 +26,9 @@ func main() {
 	if len(os.Args) > 1 {
 		dir = os.Args[1]
 	}
+	if len(os.Args) > 1 {
+		port = os.Args[1]
+	}
 	if len(os.Args) > 2 {
 		proxy = os.Args[2]
 	}
