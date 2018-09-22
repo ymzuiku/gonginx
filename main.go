@@ -26,11 +26,11 @@ func main() {
 	if len(os.Args) > 1 {
 		dir = os.Args[1]
 	}
-	if len(os.Args) > 1 {
-		port = os.Args[1]
-	}
 	if len(os.Args) > 2 {
-		proxy = os.Args[2]
+		port = os.Args[2]
+	}
+	if len(os.Args) > 3 {
+		proxy = os.Args[3]
 	}
 	withGZ := gziphandler.GzipHandler(http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
 		if isDev {
